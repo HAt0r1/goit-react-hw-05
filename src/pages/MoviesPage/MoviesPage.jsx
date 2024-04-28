@@ -15,8 +15,8 @@ const MoviePage = () => {
   const [searchParams, setSearchParams] = useSearchParams();
 
   useEffect(() => {
-    async function getMovies() {
-      if (searchParams.get("query" !== null)) {
+    async function getSearchMovies() {
+      if (searchParams.get("query") !== null) {
         try {
           setIsLoading(true);
           const data = await getMoviesByKeyWords(searchParams.get("query"));
@@ -28,7 +28,7 @@ const MoviePage = () => {
         }
       }
     }
-    getMovies();
+    getSearchMovies();
   }, [searchParams]);
 
   const handleSubmit = (event) => {
