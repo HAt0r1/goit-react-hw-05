@@ -1,0 +1,69 @@
+.imageContainer {
+  width: 400px;
+  height: 500px;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+}
+
+.infoContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.title {
+  font-size: 32px;
+  color: #b62a2a;
+  margin-bottom: 20px;
+}
+
+.score,
+.overview,
+.genre {
+  color: #fafafa;
+  line-height: 1.5;
+  font-size: 18px;
+}
+
+.overTitle,
+.genreTitle {
+  font-size: 26px;
+  color: #b62a2a;
+  margin-bottom: 20px;
+}
+
+.genresList {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.linkTitle {
+  font-size: 26px;
+  color: #b62a2a;
+  margin-bottom: 20px;
+}
+
+.linkList {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.link {
+  color: #ffffff;
+  background-color: #ea3a3a;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 300ms ease-in;
+}
+
+.link:hover {
+  background-color: #b62a2a;
+}
