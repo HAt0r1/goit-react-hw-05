@@ -24,3 +24,8 @@ export const getMoviesByKeyWords = async (word) => {
   );
   return responce.data;
 };
+
+export const getMovieInfo = async (movieId) => {
+  const responce = await axios.get(`movie/${movieId}?language=en-US`, options);
+  return responce.data;
+};
