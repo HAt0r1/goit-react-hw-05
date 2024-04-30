@@ -32,7 +32,7 @@ const MovieDetailsPage = () => {
 
   return (
     <div className={style.container}>
-      <Link to={backDrop.current} className={style.backdrop}>
+      <Link to={backDrop.current ?? "/movies"} className={style.backdrop}>
         Back
       </Link>
       {isLoading && <Loader />}
