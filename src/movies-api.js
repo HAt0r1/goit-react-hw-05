@@ -29,3 +29,19 @@ export const getMovieInfo = async (movieId) => {
   const responce = await axios.get(`movie/${movieId}?language=en-US`, options);
   return responce.data;
 };
+
+export const getMovieCast = async (movieId) => {
+  const responce = await axios.get(
+    `movie/${movieId}/credits?language=en-US`,
+    options
+  );
+  return responce.data;
+};
+
+export const getMovieReviews = async (movieId) => {
+  const responce = await axios.get(
+    `/movie/${movieId}/reviews?language=en-US`,
+    options
+  );
+  return responce.data;
+};
