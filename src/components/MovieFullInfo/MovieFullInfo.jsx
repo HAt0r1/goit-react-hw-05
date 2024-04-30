@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import style from "./MovieFullInfo.module.css";
 const MovieFullInfo = ({ movie }) => {
   return (
@@ -36,17 +35,6 @@ const MovieFullInfo = ({ movie }) => {
             })}
           </ul>
         </div>
-      </div>
-      <div>
-        <h3 className={style.linkTitle}>Additional information</h3>
-        <ul className={style.linkList}>
-          <li>
-            <Link className={style.link}>Cast</Link>
-          </li>
-          <li>
-            <Link className={style.link}>Reviews</Link>
-          </li>
-        </ul>
       </div>
     </>
   );
