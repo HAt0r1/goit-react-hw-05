@@ -1,0 +1,34 @@
+.list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  padding: 8px;
+  gap: 10px;
+  border: 1px solid #555555;
+  border-radius: 4px;
+}
+
+.name {
+  line-height: 1.5;
+  font-size: 18px;
+  color: #b62a2a;
+}
+
+.review {
+  line-height: 1.5;
+  font-size: 18px;
+  color: #fafafa;
+}
+
+.error {
+  line-height: 1.5;
+  font-size: 20px;
+  color: #b62a2a;
+}
